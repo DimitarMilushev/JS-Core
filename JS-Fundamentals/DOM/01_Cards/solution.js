@@ -45,7 +45,10 @@ function solve() {
         winner.style.border = "2px solid green";
         looser.style.border = "2px solid darkred";       
 
-        document.getElementById("history").textContent += `[${leftSpan.textContent} vs ${rightSpan.textContent}]`;
+        document.getElementById("history").textContent += `[${leftSpan.textContent} vs ${rightSpan.textContent}] `;
+
+        leftSpan.textContent = "";
+        rightSpan.textContent = "";
     }
 }
 
