@@ -23,7 +23,7 @@ function solve() {
        hiddenFieldsElement.id = "";
        button.textContent = "Hide it";
        
-       } else {
+       } else if(!hiddenFieldsElement.id && radioButton.checked){
          hiddenFieldsElement.id = currentProfileName + hideElementSuffix;
          button.textContent = "Show more";
 
