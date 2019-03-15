@@ -33,7 +33,7 @@ function solve() {
         let removalRegex = new RegExp(removalPattern, "g");
         let sharpRegex = new RegExp("[#]", "g");
 
-      // 47*09%&+I2'm0#a#stu59%d%e&nt#a9t#So00ft%Uni*!+
+        //Example input 47*0-9%&+I2'm0#a#stu59%d%e&nt#a9t#So00ft%Uni*!+
         let processedSentence = sentence.replace(removalRegex, "");
         let resultSentence = processedSentence.replace(sharpRegex, " ");
 
