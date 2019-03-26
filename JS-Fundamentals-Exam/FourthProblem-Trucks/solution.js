@@ -1,14 +1,19 @@
 function solve() {
 
     let buttons = document.getElementsByTagName("button");
+    let displays = document.getElementsByTagName("section");
+    let divElements = document.getElementsByTagName("div");
    
     buttons[0].addEventListener("click", addNewTruck);
     buttons[1].addEventListener("click", addNewTires);
     buttons[2].addEventListener("click", goToWork);
     buttons[3].addEventListener("click", endShift);
 
-    let trucks = {};
-    let backupTires = {};
+    let backupTiresDisplay = displays[0].children[1];
+    let trucksDisplay = displays[0].children[1];
+
+    let trucks = [];
+    let backupTires = [];
 
     function addNewTruck(event) {
       
@@ -19,6 +24,10 @@ function solve() {
              plateNumber: plateNumber,
              tires: tiresCondition,
          });
+
+         let currentTruck = document.createElement("div", trucks[0].plateNumber, "truck");
+         let parentTruck = divElements[divElements.length - 1];
+         parentTruck.appendChild(currentTruck);
     }
 
     function addNewTires(event) {
@@ -32,6 +41,8 @@ function solve() {
 
     function goToWork(event) {
 
+         let workPlateNumber = document.getElementById("workPlateNumber").value;
+         let distance = document.getElementById("distance").value;
 
     }
 
