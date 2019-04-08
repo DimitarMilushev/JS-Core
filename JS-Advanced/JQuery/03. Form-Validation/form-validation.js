@@ -1,5 +1,12 @@
 function validate() {
 	
+	let $usernameElement = $("#username");
+	let $emailElement = $("#email");
+	let $passwordElement = $("#password");
+	let $confirmPasswordElement = $("#confirm-password");
+	let $companyElement = $("input[id='company']:checked");
+	let $companyInfoElement = $("#companyInfo");
+	let $validElement = $("#valid");
 	let $submitElement = $("#submit");
 	let invalidInputs = 0;
 
@@ -10,14 +17,6 @@ function validate() {
 	});
 
 	function submitRequest() {
-
-	 let $usernameElement = $("#username");
-	 let $emailElement = $("#email");
-	 let $passwordElement = $("#password");
-	 let $confirmPasswordElement = $("#confirm-password");
-	 let $companyElement = $("input[id='company']:checked");
-	 let $companyInfoElement = $("#companyInfo");
-	 let $validElement = $("#valid");
 	
 	 //validate username
 	 let username = $usernameElement.val();
