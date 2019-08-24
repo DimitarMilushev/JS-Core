@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Boo</h1>
+    <button onclick="onButtonClick()">Spawn</button>
+    <div id="result"></div>
+
+    <script >
+    function onButtonClick(e) {
+        $("#result").load("http://localhost:3000/nicePage.html");
+    }
+    </script>
+</body>
+</html>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
