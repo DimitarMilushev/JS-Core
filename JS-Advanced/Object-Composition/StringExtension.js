@@ -69,7 +69,7 @@ String.format = function(string, ...params) {
     return string;
 }
 
-let test1 = "Big niggers kok";
+let test1 = "Big bad test";
 let test2 = "";
 test1 = test1.ensureStart("Wild");
 console.log(test1);
